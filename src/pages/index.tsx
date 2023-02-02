@@ -38,7 +38,8 @@ export default function Home() {
       </div>
       </main> : null}
       {showLearningSection ? <main className="m-20 ease-in duration-300" id="about-section">
-      <h2 className="text-2xl font-bold">Learning Stacks</h2>
+      <h2 className="text-2xl font-bold">Get Started Learning</h2>
+
       </main> : null}
     </>
   );
