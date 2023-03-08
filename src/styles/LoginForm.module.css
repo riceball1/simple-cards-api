@@ -16,3 +16,8 @@
     text-transform: uppercase;
     border-radius: 15px;
 }
+
+.LoginFormButton:hover {
+    background-color: black;
+    color: white;
+}
