@@ -1,0 +1,23 @@
+[
+    {
+        "userID": "001",
+        "age": 31,
+        "email": "yliu@hotmail.com",
+        "firstName": "Yan",
+        "lastName": "Liu"
+    },
+    {
+        "userID": "002",
+        "age": 35,
+        "email": "sshah@gmail.com",
+        "firstName": "Shreya",
+        "lastName": "Shah"
+    },
+    {
+        "userID": "003",
+        "age": 28,
+        "email": "ryamada@gmail.com",
+        "firstName": "Ryu",
+        "lastName": "Yamada"
+    }
+]

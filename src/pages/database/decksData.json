@@ -1,0 +1,86 @@
+{
+    "001": {
+        "decks": {
+            "deck1": {
+                "id": "deck1",
+                "name": "Turkish - Set 1",
+                "cards": [
+                    {
+                        "id": "card1",
+                        "language": "Turkish",
+                        "front": "Merhaba",
+                        "back": "Hello"
+                    },
+                    {
+                        "id": "card2",
+                        "language": "Turkish",
+                        "front": "Güle güle",
+                        "back": "Goodbye"
+                    },
+                    {
+                        "id": "card3",
+                        "language": "Turkish",
+                        "front": "Teşekkür ederim",
+                        "back": "Thank you"
+                    }
+                ]
+            }
+        }
+    },
+    "002": {
+        "decks": {
+            "deck1": {
+                "id": "deck1",
+                "name": "Russian - Set 1",
+                "cards": [
+                    {
+                        "id": "card1",
+                        "language": "Russian",
+                        "front": "Здравствуйте",
+                        "back": "Hello"
+                    },
+                    {
+                        "id": "card2",
+                        "language": "Russian",
+                        "front": "До свидания",
+                        "back": "Goodbye"
+                    },
+                    {
+                        "id": "card3",
+                        "language": "Russian",
+                        "front": "Спасибо",
+                        "back": "Thank you"
+                    }
+                ]
+            }
+        }
+    },
+    "003": {
+        "decks": {
+            "deck1": {
+                "id": "deck1",
+                "name": "Hindi - Set 1",
+                "cards": [
+                    {
+                        "id": "card1",
+                        "language": "Hindi",
+                        "front": "नमस्ते",
+                        "back": "Hello"
+                    },
+                    {
+                        "id": "card2",
+                        "language": "Hindi",
+                        "front": "अलविदा",
+                        "back": "Goodbye"
+                    },
+                    {
+                        "id": "card3",
+                        "language": "Hindi",
+                        "front": "धन्यवाद",
+                        "back": "Thank you"
+                    }
+                ]
+            }
+        }
+    }
+}
