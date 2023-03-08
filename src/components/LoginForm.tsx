@@ -13,7 +13,11 @@ const LoginForm = ({ onHandleLogin, loginStatus }: Props) => {
   const [email, setEmail] = useState("");
 
   return (
-    <>
+    <form onSubmit={(event) =>  {
+        event.preventDefault();
+        event.stopPropagation();
+        onHandleLogin(email)
+    }} className={styles.LoginForm}>
       <input
         placeholder="User Email"
         type="email"
@@ -34,7 +38,7 @@ const LoginForm = ({ onHandleLogin, loginStatus }: Props) => {
         Please use one of the following mock emails to demo the site:
         [yliu@hotmail.com, sshah@gmail.com, ryamada@gmail.com]
       </p>
-    </>
+    </form>
   );
 };
 

@@ -34,8 +34,6 @@
 .modalContent {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 60%;
   background-color: white;
   margin: 20px;
