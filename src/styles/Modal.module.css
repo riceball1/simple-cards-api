@@ -1,0 +1,50 @@
+
+/* Outer Part of Modal */
+.modalOverlay {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+
+/* Modal Visual Content */
+.modal {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  z-index: 300;
+  background-color: white;
+  margin: 30px auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  background-color: white;
+  margin: 20px;
+}
+
+.modalButton {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 45px;
+  border-radius: 5px;
+  margin: 5px;
+}
