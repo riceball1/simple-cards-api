@@ -1,6 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+
+## About Simple Cards
+
+Simple cards is a flash card app like anki. 
+It allows the user to be able to store individual cards into a deck.
+Users can study individual flash cards using a space reptition method.
+
+**wireframe**
+<img src="public/wireframe.png" />
+
+
+
 
 First, run the development server:
 
