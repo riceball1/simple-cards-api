@@ -3,26 +3,23 @@ import Header from "@/components/Header";
 import { Modal } from "@/components/Modal";
 import { LoginForm } from "@/components/LoginForm";
 import { validateLogin } from "@/helper/utils";
+import { Intro } from "@/components/Home/Intro";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+  const [loggedIn, setLoggedIn] = useState(false);
+
   const [toggleModal, setToggleModal] = useState(false);
-  const [loginStatus, setLoginStatus] = useState({
-    successMessage: "",
-    errorMessage: "",
-  });
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleLogin = (email: string) => {
     if (validateLogin(email)) {
       handleToggleModal(); // close the modal
-      setLoginStatus((prevState) => ({
-        ...prevState,
-        successMessage: `Successfully Logined in with ${email} `,
-      }));
+      setLoggedIn(true);
+      router.push("dashboard"); // Redirect to the dashboard page
     } else {
-      setLoginStatus((prevState) => ({
-        ...prevState,
-        errorMessage: "Error logging in! Try again!",
-      }));
+      setErrorMessage("Error logging in! Try again!");
     }
   };
 
@@ -33,31 +30,15 @@ export default function Home() {
   return (
     <>
       <Header />
-      <header className="text-center my-10">
-        <h1 className="text-6xl font-bold">The Simple Language App</h1>
-        <p className="sm:mx-20 mx-10 my-10 text-xl">
-          Little small chunks of learning a day can help you succeed in building
-          the lanuage skills needed to become a multilingual. You can achieve
-          your goals of becoming fluent in another language with a small stack
-          of language cards.
-        </p>
 
-        {!loginStatus.successMessage.length ? (
-          <button
-            className="rounded-full bg-teal-500 text-black p-3 w-36 shadow-md hover:shadow-2xl"
-            onClick={handleToggleModal}
-          >
-            Demo Login
-          </button>
-        ) : null}
-        {loginStatus.successMessage.length > 0 ? (
-          <p style={{ color: "green" }}>{loginStatus.successMessage}</p>
-        ) : null}
-      </header>
+      <Intro onHandleModal={handleToggleModal} />
       <div>
         {toggleModal && (
           <Modal onToggleModal={handleToggleModal}>
-            <LoginForm onHandleLogin={handleLogin} loginStatus={loginStatus} />
+            <LoginForm
+              onHandleLogin={handleLogin}
+              errorMessage={errorMessage}
+            />
           </Modal>
         )}
       </div>

@@ -3,13 +3,10 @@ import { useState } from "react";
 
 interface Props {
   onHandleLogin: (email: string) => void;
-  loginStatus: {
-    successMessage: string;
-    errorMessage: string;
-  };
+  errorMessage: string;
 }
 
-const LoginForm = ({ onHandleLogin, loginStatus }: Props) => {
+const LoginForm = ({ onHandleLogin, errorMessage }: Props) => {
   const [email, setEmail] = useState("");
 
   return (
@@ -25,8 +22,8 @@ const LoginForm = ({ onHandleLogin, loginStatus }: Props) => {
         value={email}
         onChange={(event) => setEmail(event.target.value)}
       />
-      {loginStatus.errorMessage.length > 0 ? (
-        <p style={{ color: "red" }}>{loginStatus.errorMessage}</p>
+      {errorMessage.length > 0 ? (
+        <p style={{ color: "red" }}>{errorMessage}</p>
       ) : null}
       <button
         className={styles.LoginFormButton}
