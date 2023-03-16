@@ -1,4 +1,12 @@
+# Simple Cards
+
+<img src="https://img.shields.io/badge/current%20status-work%20in%20progress-yellow">
+<img src="https://img.shields.io/github/checks-status/riceball1/simple-cards/main?style=flat-square">
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 
 ## About Simple Cards
