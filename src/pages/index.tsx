@@ -17,7 +17,7 @@ export default function Home() {
     if (validateLogin(email)) {
       handleToggleModal(); // close the modal
       setLoggedIn(true);
-      router.push("dashboard"); // Redirect to the dashboard page
+      router.push({pathname: 'dashboard', query: {useremail: email}}); // Redirect to the dashboard page
     } else {
       setErrorMessage("Error logging in! Try again!");
     }

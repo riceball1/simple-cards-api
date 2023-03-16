@@ -1,9 +1,11 @@
-{
-    "001": {
-        "decks": {
-            "deck1": {
+[
+    {
+        "id": "001",
+        "decks": [
+            {
                 "id": "deck1",
                 "name": "Turkish - Set 1",
+                "language": "Turkish",
                 "cards": [
                     {
                         "id": "card1",
@@ -24,14 +26,11 @@
                         "back": "Thank you"
                     }
                 ]
-            }
-        }
-    },
-    "002": {
-        "decks": {
-            "deck1": {
+            },
+            {
                 "id": "deck1",
                 "name": "Russian - Set 1",
+                "language": "Russian",
                 "cards": [
                     {
                         "id": "card1",
@@ -53,13 +52,45 @@
                     }
                 ]
             }
-        }
+        ]
     },
-    "003": {
-        "decks": {
-            "deck1": {
+    {
+        "id": "002",
+        "decks": [
+            {
+                "id": "deck1",
+                "name": "Russian - Set 1",
+                "language": "Russian",
+                "cards": [
+                    {
+                        "id": "card1",
+                        "language": "Russian",
+                        "front": "Здравствуйте",
+                        "back": "Hello"
+                    },
+                    {
+                        "id": "card2",
+                        "language": "Russian",
+                        "front": "До свидания",
+                        "back": "Goodbye"
+                    },
+                    {
+                        "id": "card3",
+                        "language": "Russian",
+                        "front": "Спасибо",
+                        "back": "Thank you"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "003",
+        "decks": [
+            {
                 "id": "deck1",
                 "name": "Hindi - Set 1",
+                "language": "Hindi",
                 "cards": [
                     {
                         "id": "card1",
@@ -81,6 +112,6 @@
                     }
                 ]
             }
-        }
+        ]
     }
-}
+]

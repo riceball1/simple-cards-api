@@ -13,9 +13,9 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const userId = req.query.userId;
+  const useremail = req.query.useremail;
   const user = userData.filter((user) => {
-    return user.userID === userId;
+    return user.email === useremail;
   });
   console.log(req);
   res.status(200).json(user[0]);
