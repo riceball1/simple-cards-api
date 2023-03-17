@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import decksData from "@/pages/database/decksData.json";
-import { DeckData } from "@/helper/types";
+import { DeckData } from "@/types/common";
 
 export default function handler(
   req: NextApiRequest,

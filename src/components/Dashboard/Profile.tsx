@@ -1,11 +1,10 @@
-import { UserData } from "@/helper/types";
+import { UserData } from "@/types/common";
 
 interface Props {
   userData: UserData;
 }
 
 const Profile = ({ userData }: Props) => {
-
   return (
     <div>
       <h2>You are logged in {`${userData.firstName} ${userData.lastName}`}</h2>

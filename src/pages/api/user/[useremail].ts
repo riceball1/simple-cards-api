@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import userData from "@/pages/database/userData.json";
-import { UserData } from "@/helper/types";
-
+import { UserData } from "@/types/common";
 
 export default function handler(
   req: NextApiRequest,

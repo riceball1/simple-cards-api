@@ -1,5 +1,5 @@
 import styles from "@/styles/Modal.module.css";
-import { ReactChildren } from "@/types/typesHelper";
+import { ReactChildren } from "@/types/common";
 
 interface Props {
   onToggleModal: () => void;

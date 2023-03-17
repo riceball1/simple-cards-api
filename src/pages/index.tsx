@@ -8,7 +8,6 @@ import { useRouter } from "next/router";
 
 export default function Home() {
   const router = useRouter();
-  const [loggedIn, setLoggedIn] = useState(false);
 
   const [toggleModal, setToggleModal] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -16,7 +15,6 @@ export default function Home() {
   const handleLogin = (email: string) => {
     if (validateLogin(email)) {
       handleToggleModal(); // close the modal
-      setLoggedIn(true);
       router.push({pathname: 'dashboard', query: {useremail: email}}); // Redirect to the dashboard page
     } else {
       setErrorMessage("Error logging in! Try again!");

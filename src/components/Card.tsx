@@ -5,7 +5,7 @@ interface Props {
   back: string;
 }
 
-const Flashcard = ({ front, back }: Props) => {
+const Card = ({ front, back }: Props) => {
   const [showCardFront, setShowCardFront] = useState<boolean>(true);
 
   const cardStyle = {
@@ -24,4 +24,4 @@ const Flashcard = ({ front, back }: Props) => {
   );
 };
 
-export default Flashcard;
+export default Card;

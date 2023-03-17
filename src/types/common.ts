@@ -1,42 +1,38 @@
-interface UserData {
+import { ReactNode } from "react";
+
+type ReactChildren = ReactNode | ReactNode[];
+
+type UserData = {
   age?: number;
   email?: string;
   firstName?: string;
   lastName?: string;
   id?: string;
-}
+};
 
-
-interface Deck {
+type Deck = {
   id: string;
   language: string;
   name: string;
   cards: Card[];
-}
+};
 
-interface DeckData {
+type DeckData = {
   id: string;
   decks: Deck[];
-}
+};
 
-interface Card {
+type Card = {
   id: string;
   language: string;
   front: string;
   back: string;
-}
+};
 
-interface Error {
+type Error = {
   name: string;
   message: string;
   stack?: string;
-}
+};
 
-
-
-export type {
-    UserData,
-    DeckData,
-    Error,
-    Deck
-}
+export type { ReactChildren, UserData, DeckData, Error, Deck, Card };
