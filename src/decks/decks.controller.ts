@@ -8,6 +8,7 @@ import {
   Post,
   Put,
   Query,
+  ValidationPipe,
 } from '@nestjs/common';
 import { CreateDeckDto } from './dto/create-deck.dto';
 import { UpdateDeckDto } from './dto/update-deck.dto';
@@ -38,7 +39,7 @@ export class DecksController {
   }
   // POST /decks
   @Post()
-  createDeck(@Body() createDeckDto: CreateDeckDto) {
+  createDeck(@Body(new ValidationPipe) createDeckDto: CreateDeckDto) {
     return this.decksService.createDeck(createDeckDto)
   }
 
