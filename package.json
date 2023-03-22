@@ -1,0 +1,24 @@
+{
+  "name": "simple-cards",
+  "version": "1.0.0",
+  "description": "A simple consumable API for creating an anki clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riceball1/simple-cards.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riceball1/simple-cards/issues"
+  },
+  "homepage": "https://github.com/riceball1/simple-cards#readme",
+  "devDependencies": {
+    "apollo-server": "^3.12.0",
+    "graphql": "^16.6.0"
+  }
+}
