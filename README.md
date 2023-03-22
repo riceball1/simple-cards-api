@@ -2,17 +2,57 @@
 
 A simple consumable API for creating an anki clone
 
-## Getting Started
+## About
 
-- This API will be built using graphQL
-- You can test the code using the graphQL playground by running `node index.js` at the root of the directory
-- [tutorial](https://www.apollographql.com/blog/graphql/examples/building-a-graphql-api/)
+- Built with nest.js and REST endpoint
+- [quickstart](https://docs.nestjs.com/)
 
+## Description
 
-## TODO:
-- Build out GrapHQL API
-- Authentication and authorization
-- Security
-- Schema Splitting
-- Client-Side GraphQL
-- Deployment
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+
+## Installation
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+## Test
+
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
+```
+
+## Nest CLI
+
+Use nest cli to help setup nestjs projects and create modules, etc
+
+```bash
+
+# install nest cli 
+$ npm i -g @nestjs/cli@latest
+
+```
+
+## Resources
+- [nest.js crash course](https://www.youtube.com/watch?v=pcX97ZrTE6M&list=RDCMUCW5YeuERMmlnqo4oq8vwUpg&index=4)
