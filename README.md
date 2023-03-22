@@ -55,4 +55,4 @@ $ npm i -g @nestjs/cli@latest
 ```
 
 ## Resources
-- [nest.js crash course](https://www.youtube.com/watch?v=pcX97ZrTE6M&list=RDCMUCW5YeuERMmlnqo4oq8vwUpg&index=4)
+- [nest.js crash course 7 episodes](https://www.youtube.com/watch?v=pcX97ZrTE6M&list=PL4cUxeGkcC9g8YFseGdkyj9RH9kVs_cMr)

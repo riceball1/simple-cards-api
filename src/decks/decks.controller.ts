@@ -4,6 +4,7 @@ import {
   Delete,
   Get,
   Param,
+  ParseIntPipe,
   Post,
   Put,
   Query,
@@ -32,8 +33,8 @@ export class DecksController {
 
   // GET /decks/:id --> {...}
   @Get(':id')
-  getOneDeck(@Param('id') id: string) {
-    return this.decksService.getDeck(+id)
+  getOneDeck(@Param('id', ParseIntPipe) id: number) {
+    return this.decksService.getDeck(id)
   }
   // POST /decks
   @Post()
@@ -43,13 +44,13 @@ export class DecksController {
 
   // PUT /decks/:id --> {...}
   @Put(':id')
-  updateDeck(@Param('id') id: string, @Body() updateDeckDto: UpdateDeckDto) {
-    return this.decksService.updateDeck(+id, updateDeckDto)
+  updateDeck(@Param('id', ParseIntPipe) id: number, @Body() updateDeckDto: UpdateDeckDto) {
+    return this.decksService.updateDeck(id, updateDeckDto)
   }
 
   // DELETE /decks/:id --> {...}
   @Delete(':id')
-  deleteDeck(@Param('id') id: string) {
-    return this.decksService.removeDeck(+id)
+  deleteDeck(@Param('id', ParseIntPipe) id: number) {
+    return this.decksService.removeDeck(id)
   }
 }
